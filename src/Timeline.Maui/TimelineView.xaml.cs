@@ -97,6 +97,13 @@ public partial class TimelineView : ContentView
             TimelineOrientation.Vertical => FlexDirection.Column,
             _ => FlexDirection.Column,
         };
+
+        // timelineView.TimelineContainer.Orientation = orientation switch
+        // {
+        //     TimelineOrientation.Horizontal => StackOrientation.Horizontal,
+        //     TimelineOrientation.Vertical => StackOrientation.Vertical,
+        //     _ => StackOrientation.Vertical,
+        // };
         
         foreach (var itemView in timelineView.TimelineContainer.Children)
         {

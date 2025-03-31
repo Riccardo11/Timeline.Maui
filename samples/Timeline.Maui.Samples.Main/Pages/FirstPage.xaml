@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:timeline="clr-namespace:Timeline.Maui;assembly=Timeline.Maui"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             x:Class="Timeline.Maui.Samples.Main.Pages.FirstPage">
+    <!-- <VerticalStackLayout> -->
+    <!--     <Grid -->
+    <!--         RowDefinitions="*, *"> -->
+    <!--         <ContentView -->
+    <!--             Grid.Row="0" -->
+    <!--             BackgroundColor="Blue"> -->
+    <!--             <Label -->
+    <!--                 TextColor="White" -->
+    <!--                 Text="First row of the grid" /> -->
+    <!--         </ContentView> -->
+    <!--         <ContentView -->
+    <!--             Grid.Row="1" -->
+    <!--             HeightRequest="50" -->
+    <!--             BackgroundColor="Red"> -->
+    <!--             <Label -->
+    <!--                 TextColor="White" -->
+    <!--                 Text="Second row of the grid" /> -->
+    <!--         </ContentView> -->
+    <!--     </Grid> -->
+    <!--     <Label -->
+    <!--         Text="Not grid" /> -->
+    <!-- </VerticalStackLayout> -->
+    <HorizontalStackLayout>
+        <timeline:TimelineView
+            x:Name="Timeline"
+            BackgroundColor="Aqua"
+            ItemsPosition="Start"
+            IndicatorColor="Green"
+            LineColor="Blue"
+            Orientation="Vertical"
+            Spacing="30">
+            <timeline:TimelineView.ItemTemplate>
+                <DataTemplate x:DataType="sys:String">
+                    <Label Text="{Binding .}" />
+                </DataTemplate>
+            </timeline:TimelineView.ItemTemplate>
+        </timeline:TimelineView>
+    </HorizontalStackLayout>
+</ContentPage>

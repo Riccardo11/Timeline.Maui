@@ -9,6 +9,10 @@
         x:Name="TimelineItemContainer"
         ColumnDefinitions="*, 5, *"
         ColumnSpacing="{x:Static internals:Constants.DefaultItemIndicatorSpacing}">
+    <!-- <FlexLayout -->
+    <!--     Direction="Row" -->
+    <!--     x:Name="TimelineItemContainer"> -->
+        
         <Grid
             x:Name="LinesAndIndicatorContainer"
             RowDefinitions="*, Auto, *"
@@ -38,5 +42,6 @@
         </Grid>
         
         <ContentView />
+    <!-- </FlexLayout> -->
     </Grid>
 </ContentView>

@@ -8,4 +8,7 @@
         Direction="Column"
         x:Name="TimelineContainer">
     </FlexLayout>
+    <!-- <StackLayout -->
+    <!--     Orientation="Vertical" -->
+    <!--     x:Name="TimelineContainer" /> -->
 </ContentView>

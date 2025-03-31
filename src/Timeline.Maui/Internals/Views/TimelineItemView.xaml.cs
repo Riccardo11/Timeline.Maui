@@ -294,15 +294,15 @@ internal partial class TimelineItemView : ContentView
                 {
                     Grid.SetRow(userView, 0);
                     Grid.SetColumn(userView, 2);
-                    userView.HorizontalOptions = LayoutOptions.Fill;
-                    userView.VerticalOptions = LayoutOptions.End;
+                    userView.VerticalOptions = LayoutOptions.Fill;
+                    userView.HorizontalOptions = LayoutOptions.Start;
                 }
                 else
                 {
                     Grid.SetColumn(userView, 0);
                     Grid.SetRow(userView, 2);
-                    userView.VerticalOptions = LayoutOptions.Fill;
-                    userView.HorizontalOptions = LayoutOptions.End;
+                    userView.HorizontalOptions = LayoutOptions.Fill;
+                    userView.VerticalOptions = LayoutOptions.Start;
                 }
                 break;
             default:

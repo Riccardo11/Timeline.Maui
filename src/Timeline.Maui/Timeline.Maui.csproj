@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <PackageId>rminato.timeline.maui</PackageId>
+        <PackageId>camionkraken.timeline.maui</PackageId>
         <Version>1.0.0</Version>
         <Authors>Riccardo Minato</Authors>
         <Title>Timeline.Maui</Title>
